@@ -15,11 +15,5 @@ pipeline {
                 sh "echo ${INSTAGRAM_NERIO}"
             }
         }
-        stage("Print system environment variables") {
-            steps {
-                sh "echo ${env.INSTAGRAM}" 
-                sh "echo ${INSTAGRAM}"
-            }
-        }
     }
 }
